@@ -2,11 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>Lab-studio</title>
+	<title>pokedex</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="assets/imagen/joystick.png">
 	<!-- FontAwesome -->
 	<script src="https://use.fontawesome.com/b432f04897.js"></script>
 	<!-- Fonts -->
@@ -21,13 +20,51 @@
 	
 </head>
 <body>
-<!--Navbar -->
-<!--Services -->
-<!--Portafolio -->
-<!--About -->
-<!--Team -->
-<!--Contacto -->
+<div id="sidedrawer">
+  <div id="sidedrawer-brand">Pokedex.org </div>
+  <ul>
+    <li>
+     pokemon
+    </li>
+    <li>
+     about
+    </li>
+  </ul>
+</div>
+<div id="content-wrapper">
+  <div class="mui--appbar-height"></div>
+  <div class="mui-container-fluid">
+    <br>
 
+    <h1 id="main-title">Pokedex.org</h1>
+
+    <div>
+      <input id="search-bar" type="search" placeholder="Search for Pokémon"/>
+      <label for="monsters-search-bar" class="sr-only">Search for Pokémon</label>
+      <button id="buscar">buscar</button>
+    </div>
+    
+
+    <div id="list-wrapper">
+      <ul id="list"></ul>
+      <div id="progress-mask"></div>
+    </div>
+  </div>
+</div>
+<div id="detail-view-container" class="hidden">
+  <div id="detail-view"></div>
+	
+
+
+
+<!--JQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!--js-->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
