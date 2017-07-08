@@ -17,34 +17,34 @@ $(document).ready(function() {
             datatype: 'json', //tipo de datos que esperamos como respuesta
             })
         .done(function(response) {
-            console.log(response);
+             $('div.pokemon').append(document.createTextNode(response));
         })
         .fail(function() {
-            console.log("error");
+            prompt("error");
         });
     }
 
-    var ajaxind = function(gif){
+    var ajaxind = function(poke){
         $.ajax({
             url: 'http://pokeapi.co/api/v2/pokemon-species/1/', //pagina donde buscaremos las imagenes
             type: 'GET', //obtener datos
             datatype: 'json', //tipo de datos que esperamos como respuesta
         
         }).done(function(response) {
-            console.log(response);
+           $('div.pokemon').append(document.createTextNode(response));
             
         })
         .fail(function() {
-            console.log("error");
+            prompt("error");
         });
     }
  
     $("#buscar").click(function(event){
         console.log("Entro");
-        $("#elementos").empty();
-        var gif = $("#gif-text").val();
-        ajaxinfo(gif);
+        $(".pokedex1").empty();
+        var poke = $("#gif-text").val();
+        ajaxinfo(poke);
     });
-
+  
    
 });
