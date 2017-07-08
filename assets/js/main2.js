@@ -46,5 +46,22 @@ $(document).ready(function() {
         ajaxinfo(poke);
     });
   
+
+
+
    
 });
+ /*var show = function(data){
+        data.pokemon_entries.forEach(function(element){
+            var nombre = element.pokemon_species.name;
+            var id = element.entry_number;
+            
+            var pokemones = detalles + id;
+
+
+            $("#.pokemon").append("algo"(id,nombre,pokePic));            
+           
+        })
+}*/
+
+
